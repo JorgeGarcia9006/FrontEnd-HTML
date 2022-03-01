@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+
+<html lang="en"><!--en = Idioma Ingles, esp = Idioma Español-->
+<head>
+    <meta charset="UTF-8"><!--Craracteres usados en ingles y español-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Compatibilidad de exploradores web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--define la escala del zoom-->
+    <title>Pedido - Pure Cake</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon pastel.png">
+    <style></style>
+</head>
+
+<body>
+    <img src="imagenes/Logo pasteleria.png" alt="Logo Pure Cake" width="150px" height="150px">
+    <br>
+    <form action="/accion.js" id="form1" method="post">
+
+    <h2>Seleccione los Sabores y decoraciones del pastel</h2>
+
+    <ul>
+        <h3>Sabores</h3>
+        
+        <input type="checkbox" id="topping1" name="topping1" value="Fresa"> 
+        <label for="topping1">Fresa</label><br>    
+        <input type="checkbox" id="topping2" name="topping2" value="Chocolate">
+        <label for="topping2">Chocolate</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+        <label for="topping2">Vainilla</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Nuez">
+        <label for="topping3">Nuez</label><br>
+        <br>
+    </ul>   
+
+    <ul>
+        <h3>Decoraciones</h3>
+        <input type="checkbox" id="topping1" name="topping1" value="Bengalas">
+        <label for="topping1">Bengalas (5 c/pastel)</label><br>    
+        <input type="checkbox" id="topping2" name="topping2" value="Texto/Frases">
+        <label for="topping2">Texto/Frases</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Ilustraciones">
+        <label for="topping2">Ilustraciones</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Figuras">
+        <label for="topping3">Figuras</label><br>
+        <br>
+    </ul>   
+
+    <hr>
+
+    <h2>Informacion del cliente</h2>
+    
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="tel1">Teléfono:</label><br>
+        <input type="tel" id="phone" name="phone" 
+               maxlength="12" minlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+        <small>Ejemplo: 123-456-7890</small> <br> <br>
+
+        <label for="url1">E-Mail</label><br>
+        <input type="url" id="url1" name="url1">
+        <small>Ejemplo: purecake@gmail.com</small> <br> <br><br><br>
+
+        <input type="submit" value="Hacer pedido">
+        <input type="reset">
+    </form>
+
+</body>
+</html>
